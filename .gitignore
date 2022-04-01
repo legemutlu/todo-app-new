@@ -1,1 +1,15 @@
 /.DS_Store
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+./client/node_modules
+./client/build
+
+./server/node_modules
+./server/dist
+
+./server/config.env
