@@ -20,9 +20,14 @@ mongoose
   })
   .then(() => {
     console.log('DB connected successfully');
-  }).catch((err: any) => console.error(err));
+  })
+  .catch((err: any) => console.error(err));
 
 const port = process.env.PORT || 8000;
+
+if (process.env.ENV === 'production') {
+  app.use(express.static('../client/build'));
+}
 const server = app.listen(port, () => {
   console.log(`Api is running on port ${port}`);
 });
