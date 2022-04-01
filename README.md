@@ -2,19 +2,17 @@
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the server and client directory, you can run:
 
 ```bash
 yarn
 ```
 
-Go to server and client folders and run script.
+In the server directory, you run that script. It runs both client and server side same time with concurrently.
 
 ```bash
 yarn start
 ```
-
-Go to server folder and run that script. It runs both client and server side same time with concurrently.
 
 ## Description For App
 
